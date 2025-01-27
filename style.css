@@ -117,10 +117,15 @@ footer{
     padding: 2rem;
     text-align: center;
 
+    p{
+        padding: 1rem 0;
+    }
+
     ul{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 2rem;
         
     }
 
@@ -182,6 +187,10 @@ footer{
     .hidden{
         display: block;
     }
+
+    .d-flex{
+        max-width: 100%;
+    }
         
 }
 
@@ -218,6 +227,13 @@ footer{
                 vertical-align: middle;
             }
         }
+    }
+
+    .d-flex{
+        vertical-align: middle;
+        display: flex;
+        justify-content: space-between;
+        text-align: start;
     }
 
     
