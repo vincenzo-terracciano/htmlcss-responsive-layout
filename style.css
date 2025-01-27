@@ -49,13 +49,28 @@ img{
 
 .col-text{  
     padding: 2rem;
+
+    li{
+        padding: 0.5rem 0;
+    }
 }
 
 ul{
     list-style: none;
+}
 
-    li{
-        padding: 0.5rem 0;
+.social{
+    margin: 2rem 0; 
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+
+        li{
+            background-color: white;
+            padding: 1rem;
+            border-radius: 25px;
+        }
     }
 }
 
@@ -78,27 +93,35 @@ ul{
             font-size: 30px;
         }
 
-        .card-text{
+        .col-text{
             max-width: 768px;
+
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem 6rem;
+            }
         }
 
-        ul{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem 6rem;
+        .social{
+            li{
+                padding: 1rem 3.5rem;
+            }
         }
-
     }
-
-    .text-hidden{
-        display: inline-block;
+    
+    .title{
+        .text-hidden{
+            display: inline-block;
+            }
     }
+        
 }
 
 @media screen and (min-width: 992px)
 {
     .container{
-        padding: 4rem;
+        padding: 2rem 8rem;
 
         h2{
             font-size: 40px;
@@ -107,12 +130,26 @@ ul{
         .row{
             display: flex;
         }
+    }
 
+    .col-text{
         ul{
             flex-direction: column;
             gap: 0.5rem;
         }
+    }
 
+    .social{
         
+        li{
+            .text-hidden{
+                display: inline-block;
+                font-size: 10px;
+            }
+
+            span{
+                vertical-align: middle;
+            }
+        }
     }
 }
