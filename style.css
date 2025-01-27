@@ -9,6 +9,7 @@
     --bool-title: #ff9614;
     --bool-product: #4e3969;
     --bool-secondary: #7c69a4;
+    --bool-ig: #e36b98;
 }
 
 section h1{
@@ -71,6 +72,8 @@ ul{
             background-color: white;
             padding: 1rem;
             border-radius: 25px;
+
+            
         }
     }
 }
@@ -79,13 +82,14 @@ ul{
     margin: 2rem 0;
 
     h2{
-        color: black
-        ;
+        color: black;
+        
     }
 
     hr{
         width: 5rem;
         margin-bottom: 2rem;
+        border: 1px solid var(--bool-title);
     }
 
     img{
@@ -141,6 +145,28 @@ footer{
 .text-hidden{
     display: none;
 }
+
+.fa-facebook{
+    color: blue;
+}
+
+.fa-twitter{
+    color: deepskyblue;
+}
+
+.fa-instagram{
+    color: var(--bool-ig);
+}
+
+.fa-pinterest{
+    color: red;
+}
+
+.fa-youtube{
+    color: red;
+}
+
+
 
 /* Media Query */
 @media screen and (min-width: 768px)
@@ -234,6 +260,15 @@ footer{
         display: flex;
         justify-content: space-between;
         text-align: start;
+
+        ul{
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        div{
+            align-self: center;
+        }
     }
 
     
