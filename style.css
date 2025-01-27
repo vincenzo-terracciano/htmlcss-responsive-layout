@@ -8,6 +8,7 @@
     --bool-primary: #f6f5f3;
     --bool-title: #ff9614;
     --bool-product: #4e3969;
+    --bool-secondary: #7c69a4;
 }
 
 section h1{
@@ -103,6 +104,30 @@ ul{
 
 .hidden{
     display: none;
+}
+
+footer{
+    background-color: var(--bool-secondary);
+}
+
+.d-flex{
+    max-width: 70%;
+    margin: auto;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+
+    a{  
+        color: white;
+        
+    }
 }
 
 
