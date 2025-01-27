@@ -21,7 +21,7 @@ main section{
 }
 
 .container{
-    margin: 1rem;
+    padding: 1rem;
 
     h4{
         color: gray;
@@ -72,12 +72,47 @@ ul{
     }
 
     .container{
+        padding: 2rem;
+
         h2{
             font-size: 30px;
         }
+
+        .card-text{
+            max-width: 768px;
+        }
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem 6rem;
+        }
+
     }
 
     .text-hidden{
         display: inline-block;
+    }
+}
+
+@media screen and (min-width: 992px)
+{
+    .container{
+        padding: 4rem;
+
+        h2{
+            font-size: 40px;
+        }
+
+        .row{
+            display: flex;
+        }
+
+        ul{
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        
     }
 }
