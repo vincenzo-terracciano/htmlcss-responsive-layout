@@ -74,6 +74,39 @@ ul{
     }
 }
 
+.story{
+    margin: 2rem 0;
+
+    h2{
+        color: black
+        ;
+    }
+
+    hr{
+        width: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    img{
+        width: 300px;
+    }
+
+    .tiramisù{
+        display: block;
+        margin: auto;
+    }
+
+    p{
+        margin-top: 2rem;
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+
+
 /* Utilities */
 .text-hidden{
     display: none;
@@ -105,8 +138,13 @@ ul{
 
         .social{
             li{
-                padding: 1rem 3.5rem;
+                padding: 1rem 2rem;
             }
+        }
+
+        .tiramisù{
+            float: left;
+            margin: 0.5rem;
         }
     }
     
@@ -114,6 +152,10 @@ ul{
         .text-hidden{
             display: inline-block;
             }
+    }
+
+    .hidden{
+        display: block;
     }
         
 }
@@ -152,4 +194,6 @@ ul{
             }
         }
     }
+
+    
 }
