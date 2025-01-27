@@ -7,6 +7,7 @@
 :root{
     --bool-primary: #f6f5f3;
     --bool-title: #ff9614;
+    --bool-product: #4e3969;
 }
 
 section h1{
@@ -15,10 +16,68 @@ section h1{
     padding: 1rem;
 }
 
+main section{
+    background-color: var(--bool-primary);
+}
+
+.container{
+    margin: 1rem;
+
+    h4{
+        color: gray;
+    }
+
+    h2{
+        color: var(--bool-product);
+        padding: 1rem 0;
+    }
+
+    h5{
+        padding-bottom: 1rem;
+        font-size: 18px;
+    }
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.row{
+    background-color: white;
+}
+
+.col-text{  
+    padding: 2rem;
+}
+
+ul{
+    list-style: none;
+
+    li{
+        padding: 0.5rem 0;
+    }
+}
+
+/* Utilities */
+.text-hidden{
+    display: none;
+}
+
 /* Media Query */
 @media screen and (min-width: 768px)
 {
     section h1{
         text-align: start;
+    }
+
+    .container{
+        h2{
+            font-size: 30px;
+        }
+    }
+
+    .text-hidden{
+        display: inline-block;
     }
 }
