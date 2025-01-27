@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bool-primary: #f6f5f3;
+    --bool-title: #ff9614;
+}
+
+section h1{
+    color: var(--bool-title);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Media Query */
+@media screen and (min-width: 768px)
+{
+    section h1{
+        text-align: start;
+    }
+}
